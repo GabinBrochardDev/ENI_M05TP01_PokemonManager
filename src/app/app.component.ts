@@ -5,7 +5,7 @@ import { GenerationsComponent } from './composants/generations/generations.compo
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, GenerationsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

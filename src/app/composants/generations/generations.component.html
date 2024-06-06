@@ -1,1 +1,10 @@
 <h1>Generations</h1>
+<div>
+    <ul>
+        <li *ngFor="let generation of generations; let i = index">
+            <a [routerLink]="['/generation', i + 1]">
+                {{ generation }}
+            </a>
+        </li>
+    </ul>
+</div>

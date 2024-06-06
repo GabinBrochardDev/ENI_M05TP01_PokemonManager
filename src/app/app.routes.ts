@@ -4,5 +4,5 @@ import { PokemonsComponent } from './composants/pokemons/pokemons.component';
 
 export const routes: Routes = [
     { path: '', component: GenerationsComponent },
-    { path: '', component: PokemonsComponent }
+    { path: 'generation/:id', component: PokemonsComponent }
 ];

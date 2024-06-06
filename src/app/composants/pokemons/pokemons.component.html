@@ -1,1 +1,24 @@
 <h1>Pokémons</h1>
+<div>
+    <h2>Pokémon de la Génération {{ generationId }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Hauteur (m)</th>
+                <th>Poids (kg)</th>
+            </tr>
+        </thead>
+        <tbody class="text-gray-700">
+            <tr *ngFor="let pokemon of generationPokemons">
+                <td>{{ pokemon.id }}</td>
+                <td>{{ pokemon.name }}</td>
+                <td>{{ pokemon.type }}</td>
+                <td>{{ pokemon.height || 'N/A' }}</td>
+                <td>{{ pokemon.weight || 'N/A' }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
